@@ -927,7 +927,9 @@ require('lazy').setup({
         pattern = '*',
         callback = function(args)
           local lang = vim.treesitter.language.get_lang(args.match)
-          if lang and pcall(vim.treesitter.start, args.buf, lang) then end
+          if lang and pcall(vim.treesitter.language.inspect, lang) then
+            pcall(vim.treesitter.start, args.buf, lang)
+          end
         end,
       })
     end,
