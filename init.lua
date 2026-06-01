@@ -923,9 +923,6 @@ require('lazy').setup({
     lazy = false,
     config = function()
       require('nvim-treesitter').setup()
-      require('nvim-treesitter').install({
-        'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc',
-      })
       vim.api.nvim_create_autocmd('FileType', {
         pattern = '*',
         callback = function(args)
