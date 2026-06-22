@@ -1,0 +1,22 @@
+require("nvim-treesitter.configs").setup({
+  ensure_installed = {
+    "c",
+    "c_sharp",
+    "rust",
+    "haskell",
+    "python",
+    "lua",
+    "vim",
+    "vimdoc",
+    "query",
+    "markdown",
+    "markdown_inline",
+    "bash",
+    "json",
+    "yaml",
+    "toml",
+  },
+  auto_install = true,
+  highlight = { enable = true },
+  indent = { enable = true },
+})
