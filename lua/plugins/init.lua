@@ -42,6 +42,12 @@ vim.pack.add({
   { src = gh("stevearc/conform.nvim") },
   { src = gh("mfussenegger/nvim-lint") },
 
+  -- tmux
+  { src = gh("christoomey/vim-tmux-navigator") },
+
+  -- task runner
+  { src = gh("stevearc/overseer.nvim") },
+
   -- lsp tooling
   { src = gh("mason-org/mason.nvim") },
   { src = gh("WhoIsSethDaniel/mason-tool-installer.nvim") },
@@ -59,3 +65,4 @@ require("plugins.git")
 require("plugins.editing")
 require("plugins.mason")
 require("plugins.roslyn")
+require("plugins.overseer")
