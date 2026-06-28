@@ -57,7 +57,6 @@ vim.pack.add({
   { src = gh("seblyng/roslyn.nvim") },
 })
 
-require("plugins.snacks")
 require("plugins.themes")
 require("plugins.ui")
 require("plugins.treesitter")
