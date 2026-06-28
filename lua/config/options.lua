@@ -17,6 +17,7 @@ opt.incsearch = true
 opt.hlsearch = true
 
 opt.termguicolors = true
+opt.conceallevel = 2
 opt.scrolloff = 8
 opt.sidescrolloff = 8
 opt.wrap = false

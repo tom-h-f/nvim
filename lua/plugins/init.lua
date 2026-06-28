@@ -42,6 +42,9 @@ vim.pack.add({
   { src = gh("stevearc/conform.nvim") },
   { src = gh("mfussenegger/nvim-lint") },
 
+  -- notes
+  { src = gh("obsidian-nvim/obsidian.nvim") },
+
   -- tmux
   { src = gh("christoomey/vim-tmux-navigator") },
 
@@ -54,6 +57,7 @@ vim.pack.add({
   { src = gh("seblyng/roslyn.nvim") },
 })
 
+require("plugins.snacks")
 require("plugins.themes")
 require("plugins.ui")
 require("plugins.treesitter")
@@ -63,6 +67,7 @@ require("plugins.oil")
 require("plugins.harpoon")
 require("plugins.git")
 require("plugins.editing")
+require("plugins.obsidian")
 require("plugins.mason")
 require("plugins.roslyn")
 require("plugins.overseer")

@@ -1,7 +1,8 @@
 require("blink.cmp").setup({
   keymap = {
     preset = "default",
-    ["<CR>"] = { "accept", "fallback" },
+    ["<CR>"] = { "fallback" },
+    ["<Tab>"] = { "accept", "fallback" },
   },
   appearance = { nerd_font_variant = "mono" },
   completion = {
